@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato — Midea Treinamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-name">Midea Treinamento</span>
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Abrir menu</span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="site-nav" class="nav" role="navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Início</a></li>
+<li><a href="sobre.html" class="nav-link">Sobre</a></li>
+<li><a href="treinos.html" class="nav-link">Treinamentos</a></li>
+<li><a href="biblioteca.html" class="nav-link">Biblioteca</a></li>
+<li><a href="contato.html" class="nav-link">Contato</a></li>
+<li><a href="perfil.html" class="nav-link">Perfil</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <h1>Contato & Suporte</h1>
+    <p>Para suporte técnico ou dúvidas sobre os treinamentos, entre em contato com o RH ou com o time de Treinamento:</p>
+
+    <ul>
+      <li>RH Treinamento: rh.treinamento@midea.example (substituir)</li>
+      <li>Coordenador de Treinamento: treinar.midea@example.com</li>
+      <li>Tel: +55 (00) 0000-0000 (substituir)</li>
+    </ul>
+
+    <h2>Formulário de contato</h2>
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Formulário de contato: demo — integrar backend quando disponível.');">
+      <label for="name">Nome</label>
+      <input id="name" name="name" required>
+
+      <label for="email">E-mail</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">Mensagem</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button class="btn" type="submit">Enviar mensagem</button>
+    </form>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Midea — Portal de Treinamento</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

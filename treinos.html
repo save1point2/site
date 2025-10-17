@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Catálogo de Treinamentos — Midea</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-name">Midea Treinamento</span>
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Abrir menu</span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="site-nav" class="nav" role="navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Início</a></li>
+<li><a href="sobre.html" class="nav-link">Sobre</a></li>
+<li><a href="treinos.html" class="nav-link">Treinamentos</a></li>
+<li><a href="biblioteca.html" class="nav-link">Biblioteca</a></li>
+<li><a href="contato.html" class="nav-link">Contato</a></li>
+<li><a href="perfil.html" class="nav-link">Perfil</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <h1>Catálogo de Treinamentos — Trilhas e Módulos</h1>
+    <p>Este catálogo foi pensado para oferecer trilhas completas desde Operador até Líder de Produção.</p>
+
+    <section class="catalog">
+      <!-- vários cartões repetidos para exagero -->
+      <div class="module-card">
+        <h3>Trilha Operador — Segurança e Produtividade (10 módulos)</h3>
+        <p>Conteúdo: Introdução à segurança, práticas de EPI, rotina produtiva, 5S, qualidade básica, ergonomia.</p>
+        <p><a href="modules/safety.html" class="btn">Acessar módulo: Segurança</a></p>
+      </div>
+
+      <div class="module-card">
+        <h3>Trilha Manutenção — Preventiva e Preditiva (8 módulos)</h3>
+        <p>Conteúdo: Rotinas de manutenção, lubrificação, alinhamento, análise de vibração, planejamento de paradas.</p>
+        <p><a href="modules/maintenance.html" class="btn">Acessar módulo: Manutenção</a></p>
+      </div>
+
+      <div class="module-card">
+        <h3>Trilha Produtividade — Lean e Kaizen (9 módulos)</h3>
+        <p>Conteúdo: 5S, TPM, Kaizen, Kanban, balanceamento, redução de lead time, indicadores.</p>
+        <p><a href="modules/productivity.html" class="btn">Acessar módulo: Produtividade</a></p>
+      </div>
+
+      <div class="module-card">
+        <h3>Trilha Qualidade — Controle Estatístico (6 módulos)</h3>
+        <p>Conteúdo: Controle de processo, Pareto, Ishikawa, FMEA, planos de amostragem.</p>
+        <p><a href="modules/quality.html" class="btn">Acessar módulo: Qualidade</a></p>
+      </div>
+
+      <div class="module-card">
+        <h3>Trilha Liderança — Supervisores (6 módulos)</h3>
+        <p>Conteúdo: Feedback, reuniões Gemba, gestão por indicadores, coaching e resolução de conflitos.</p>
+        <p><a href="modules/leadership.html" class="btn">Acessar módulo: Liderança</a></p>
+      </div>
+
+      <div class="module-card">
+        <h3>Trilha Lean Avançado — Projeto de Melhoria (workshop)</h3>
+        <p>Conteúdo: Mapeamento de fluxo de valor, projeto Kaizen, experimentos e mensuração de resultados.</p>
+        <p><a href="modules/lean.html" class="btn">Acessar módulo: Lean</a></p>
+      </div>
+
+    </section>
+
+    <section class="huge-note">
+      <h2>Notas importantes</h2>
+      <p>Este catálogo contém conteúdo suficiente para dias de estudo intensivo. Cada módulo apresenta leituras técnicas, vídeos e quizzes. Se quiser, eu já gero relatórios CSV com as respostas dos quizzes (necessita backend para persistência).</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Midea — Portal de Treinamento</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

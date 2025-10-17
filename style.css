@@ -1,0 +1,125 @@
+/* Reset e base */
+*{box-sizing:border-box}
+html,body{margin:0;font-family:Inter, system-ui, -apple-system, 'Helvetica Neue', Arial;padding:0;color:#222;background:#fff}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* Header / Navbar */
+.site-header{background:#0d47a1;color:#fff;position:sticky;top:0;z-index:40}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;align-items:center;text-decoration:none;color:inherit}
+.brand-logo{width:36px;height:36px;object-fit:contain;margin-right:10px}
+.brand-name{font-weight:600}
+
+.nav{display:block}
+.nav-list{list-style:none;margin:0;padding:0;display:flex;gap:18px;align-items:center}
+.nav-link{display:inline-block;padding:8px 12px;border-radius:6px;text-decoration:none;color:rgba(255,255,255,0.95)}
+.nav-link:hover{background:rgba(255,255,255,0.08)}
+.nav-link.active{background:#fff;color:#0d47a1;font-weight:600}
+
+/* Mobile toggle */
+.nav-toggle{display:none;background:none;border:0;color:inherit}
+.hamburger{display:inline-block;width:28px;height:2px;background:#fff;position:relative}
+.hamburger::before,.hamburger::after{content:'';position:absolute;left:0;width:28px;height:2px;background:#fff}
+.hamburger::before{top:-8px}
+.hamburger::after{top:8px}
+
+/* Hero e layout */
+.main-content{padding:36px 0}
+.hero{padding:36px 18px;background:#f4f8ff;border-radius:8px}
+.hero h1{margin-top:0}
+.btn{display:inline-block;padding:10px 16px;background:#0d47a1;color:#fff;text-decoration:none;border-radius:8px}
+
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.card{background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(11,22,39,0.06)}
+
+.longcontent{margin-top:26px;background:#fff;padding:18px;border-radius:8px}
+
+.module-page{display:grid;grid-template-columns:1fr 340px;gap:24px}
+.module-sidebar{background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(11,22,39,0.04)}
+
+.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.video iframe{width:100%;height:260px;border:0}
+.caption{font-size:14px;color:#666}
+
+.catalog{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.module-card{background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(11,22,39,0.04)}
+
+.qa{margin-bottom:12px}
+.qa label{display:block;margin:6px 0}
+
+.site-footer{padding:18px 0;text-align:center;color:#666;font-size:14px}
+
+/* FORMULÁRIO DE CONTATO */
+.contact-form {
+width: 320px;
+margin: 40px auto;
+background: #f5f5f5;
+border: 1px solid #ccc;
+padding: 15px 20px 20px 20px;
+border-radius: 4px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.contact-form h2 {
+background: #d9d9d9;
+color: #333;
+text-align: center;
+margin: -15px -20px 20px -20px;
+padding: 10px 0;
+font-size: 18px;
+font-weight: 600;
+border-bottom: 1px solid #ccc;
+}
+
+.contact-form label {
+display: block;
+font-size: 14px;
+margin-bottom: 4px;
+color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+width: 100%;
+padding: 8px;
+border: 1px solid #aaa;
+border-radius: 2px;
+margin-bottom: 12px;
+font-family: inherit;
+font-size: 14px;
+}
+
+.contact-form textarea {
+height: 100px;
+resize: none;
+}
+
+.contact-form button {
+background: #0d47a1;
+color: white;
+border: none;
+padding: 8px 16px;
+border-radius: 3px;
+cursor: pointer;
+font-size: 14px;
+}
+
+.contact-form button:hover {
+background: #09367a;
+}
+
+/* Responsive */
+@media (max-width:1100px){
+.grid-3{grid-template-columns:1fr}
+.catalog{grid-template-columns:1fr}
+.module-page{grid-template-columns:1fr}
+}
+
+@media (max-width:800px){
+.nav-list{flex-direction:column;background:linear-gradient(180deg,rgba(13,71,161,0.95),#0b3f92);position:absolute;right:16px;top:64px;padding:12px;border-radius:8px;display:none}
+.nav-list.open{display:flex}
+.nav-toggle{display:block}
+}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

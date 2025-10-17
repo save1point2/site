@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Perfil</title>
+  <link rel="stylesheet" href="perfil.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h2>Midea Treinamento</h2>
+    <nav>
+      <a href="inicio.html">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Treinamentos</a>
+      <a href="#">Biblioteca</a>
+      <a href="perfil.html" class="ativo">Perfil</a>
+    </nav>
+  </header>
+
+  <main class="perfil-container">
+    <div class="perfil-card">
+      <h2>Meu Perfil</h2>
+      <div class="foto-container">
+        <img id="fotoPerfil" src="https://via.placeholder.com/120" alt="Foto de Perfil">
+        <input type="file" id="uploadFoto" accept="image/*">
+      </div>
+      <form id="perfilForm">
+        <label>Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Senha:</label>
+        <input type="password" id="senha" required>
+
+        <div class="botoes">
+          <button type="submit">Salvar</button>
+          <button type="button" id="logout">Logout</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="perfil.js"></script>
+</body>
+</html>
