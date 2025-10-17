@@ -9,11 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
   const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-  if (!usuarioLogado) {
-    window.location.href = "login.html";
-    return;
-  }
-
   const usuarioAtual = usuarios.find(u => u.email === usuarioLogado.email);
 
   if (usuarioAtual) {
@@ -53,6 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Logout
   logoutBtn.addEventListener("click", () => {
     localStorage.removeItem("usuarioLogado");
-    window.location.href = "login.html";
   });
 });
+
